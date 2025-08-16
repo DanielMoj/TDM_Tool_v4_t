@@ -1,0 +1,146 @@
+# =================================================================
+# KRITISCH: SECRETS & CREDENTIALS - NIEMALS COMMITTEN!
+# =================================================================
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.template
+*.env.local
+*.env.production
+*.env.development
+
+# Credentials und API Keys
+**/credentials/
+**/secrets/
+*.key
+*.pem
+*.cert
+*.crt
+*.p12
+config/users.yaml
+config/database.yml
+config/database.yaml
+api_keys.json
+secrets.json
+secrets.yaml
+jwt_secret.txt
+private_key.pem
+
+# =================================================================
+# SESSION & AUTHENTICATION
+# =================================================================
+# Session-Dateien
+**/sessions/
+*.session
+session_*.rds
+.httr-oauth
+.httr-oauth-*
+.Renviron
+
+# Authentication tokens
+**/tokens/
+auth_tokens/
+*.token
+bearer_token.txt
+
+# =================================================================
+# LOGS & AUDIT (können sensible Daten enthalten)
+# =================================================================
+logs/
+*.log
+audit/
+audit_log.csv
+audit_*.csv
+error_logs/
+debug_logs/
+*.stacktrace
+*.traceback
+access.log
+error.log
+
+# =================================================================
+# UPLOADS & USER DATA
+# =================================================================
+uploads/
+uploaded_files/
+user_uploads/
+temp_uploads/
+data/patient_*
+data/real_*
+data/production_*
+**/patient_data/
+*.xlsx
+*.xls
+!data/example_*.xlsx
+!data/demo_*.xlsx
+
+# =================================================================
+# CACHE & TEMPORARY FILES
+# =================================================================
+cache/
+*.cache
+temp/
+tmp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# =================================================================
+# R/SHINY SPECIFIC
+# =================================================================
+# R Environment
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+renv/library/
+renv/local/
+renv/cellar/
+renv/staging/
+renv/python/
+
+# Shiny
+rsconnect/
+shiny_bookmarks/
+*.dcf
+
+# =================================================================
+# DOCKER & DEPLOYMENT
+# =================================================================
+docker-compose.override.yml
+.dockerignore
+*.tar
+*.tar.gz
+
+# =================================================================
+# DATABASE
+# =================================================================
+*.db
+*.sqlite
+*.sqlite3
+db/production.db
+db/backups/
+postgres_data/
+
+# =================================================================
+# BACKUP FILES (können sensible Daten enthalten)
+# =================================================================
+*.bak
+*.backup
+*.old
+*.orig
+backup/
+backups/
+
+# =================================================================
+# IDE & EDITOR
+# =================================================================
+.vscode/
+.idea/
+*.sublime-*
